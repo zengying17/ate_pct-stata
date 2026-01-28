@@ -37,7 +37,7 @@ cd "/path/to/ate_pct-stata"
 use "ate_pct_example.dta", clear
 
 * Example regression (adjust as needed)
-reg y x gr1 gr2 gr3
+reg lny x gr1 gr2 gr3
 
 * Post-estimation: group indicators must match those in the regression
 ate_pct gr1 gr2 gr3
