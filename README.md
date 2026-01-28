@@ -65,4 +65,5 @@ Email: zengying17@gmail.com
 
 ## Related repository
 
-R implementation: [<R-REPO-URL>](https://github.com/zengying17/ate_pct-stata)
+R implementation: [ate_pct-r](https://github.com/zengying17/ate_pct-r)
+
