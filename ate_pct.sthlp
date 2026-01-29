@@ -1,6 +1,5 @@
 {smcl}
 {* *! version 1.0.0  26jan2026}{...}
-{viewerdialog ate_pct "dialog ate_pct"}{...}
 {viewerjumpto "Syntax" "ate_pct##syntax"}{...}
 {viewerjumpto "Description" "ate_pct##description"}{...}
 {viewerjumpto "Options" "ate_pct##options"}{...}
@@ -181,4 +180,5 @@ Email: zengying17@gmail.com
 {pstd}
 The latest version of the code and related materials are available at:
 {browse "https://github.com/zengying17/ate_pct-stata":https://github.com/zengying17/ate_pct-stata}
+
 
