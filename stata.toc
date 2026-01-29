@@ -1,0 +1,3 @@
+v 1
+d ate_pct: ATE in percentage points under subgroup heterogeneity (post-estimation)
+p ate_pct
