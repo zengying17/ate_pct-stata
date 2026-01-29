@@ -1,12 +1,10 @@
 v 1.0.0
 d ate_pct: ATE in percentage points under subgroup heterogeneity (post-estimation)
-d
 d Author: Ying Zeng
 d Support: zengying17@gmail.com
-d
+d URL: https://github.com/zengying17/ate_pct-stata
 d Distribution-Date: 2026-01-29
-d
-d Files:
+
 f ate_pct.ado
 f ate_pct.sthlp
 f ate_pct_example.dta
