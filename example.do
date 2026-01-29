@@ -1,7 +1,7 @@
 clear
 
 use ate_pct_example,clear
-*(1) First run a semi-log regression, to get the estiamte of tauhat.
+*(1) First run a semi-log regression, to get the estimate of tauhat.
 
 reg lny x gr1 gr2 gr3, robust 
 
