@@ -27,7 +27,6 @@ help ate_pct
 
 Open Stata and run:
 ```stata
-cd "/path/to/ate_pct-stata"
 use "ate_pct_example.dta", clear
 
 * Example regression (adjust as needed)
