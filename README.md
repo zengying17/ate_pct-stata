@@ -11,23 +11,16 @@ The command is a post-estimation tool: run a regression model first, then call `
 - `ate_pct.ado` — Stata command
 - `ate_pct.sthlp` — help file
 - `ate_pct_example.dta` — example dataset
+- `example.do` — example do file illustrating the command using ate_pct_example.dta
 
 ## Installation
 
-### Option A: Install from GitHub (copy files)
-1. Download or clone this repository.
-2. Put `ate_pct.ado` and `ate_pct.sthlp` in a folder on your Stata ado-path (e.g. a personal ado folder).
-3. In Stata, you can check your ado-path via:
-   ```stata
-   adopath
-   ```
+In Stata, run:
 
-### Option B: Use directly from a local folder
-In Stata:
 ```stata
-cd "/path/to/ate_pct-stata"
-```
-Stata will find `ate_pct.ado` in the current directory when you run `ate_pct`.
+net install ate_pct, from("https://raw.githubusercontent.com/zengying17/ate_pct-stata/main/") replace
+which ate_pct
+help ate_pct
 
 ## Quick start
 
