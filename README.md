@@ -2,7 +2,7 @@
 
 Stata command **`ate_pct`** computes average treatment effects (ATEs) in **percentage points** under subgroup heterogeneity, as developed in:
 
-> Ying Zeng, *“Estimation and Inference on Average Treatment Effect in Percentage Points”*.
+> Ying Zeng, *“Estimation and Inference on Average Treatment Effect in Percentage Points under Heterogeneity”*.
 
 The command is a post-estimation tool: run a regression model first, then call `ate_pct` using subgroup indicators.
 
@@ -55,7 +55,7 @@ See `help ate_pct` for full syntax and options.
 
 If you use this code in academic work, please cite the paper below:
 
-- Zeng, Ying. *Estimation and Inference on Average Treatment Effect in Percentage Points.*
+- Zeng, Ying. *Estimation and Inference on Average Treatment Effect in Percentage Points under Heterogeneity.*
 
 ## Contact
 
