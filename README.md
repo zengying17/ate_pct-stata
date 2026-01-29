@@ -21,6 +21,7 @@ In Stata, run:
 net install ate_pct, from("https://raw.githubusercontent.com/zengying17/ate_pct-stata/main/") replace
 which ate_pct
 help ate_pct
+```
 
 ## Quick start
 
