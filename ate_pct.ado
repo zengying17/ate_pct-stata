@@ -1,4 +1,4 @@
-capture program drop ate_pct
+*! version 1.0.0  26jan2026
 program define ate_pct, rclass
     version 14.0
     syntax varlist(min=1) [if] , [truew groupsize(numlist)]

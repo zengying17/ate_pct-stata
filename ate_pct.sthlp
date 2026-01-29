@@ -25,13 +25,15 @@ where {it:groupvars} is a varlist of G mutually exclusive subgroup indicator var
 (0/1 dummies) whose coefficients are estimated in the preceding model and therefore 
 appear in {cmd:e(b)} and {cmd:e(V)}.
 
-{p 8 15 2}
-The {it:if} qualifier can further restrict the sample used to compute subgroup weights/shares; coefficients and the variance–covariance matrix are always taken from the preceding estimation command (i.e., from e(b) and e(V) on e(sample)).
 
 {p 8 15 2}
 If {opt groupsize(numlist)} is not specified, {cmd:ate_pct} uses {it:groupvars} and
 the estimation sample {cmd:e(sample)} to compute subgroup sizes and construct
 empirical weights.
+
+{p 8 15 2}
+The {it:if} qualifier is for advanced users only. It can further restrict the sample used to compute subgroup weights/shares; coefficients and the variance–covariance matrix are always taken from the preceding estimation command (i.e., from e(b) and e(V) on e(sample)).
+
 
 {marker description}{title:Description}
 
@@ -91,7 +93,7 @@ Scalars:{p_end}
 {p 12 12 2}
 {cmd:r(N)} estimation sample size from the preceding command {p_end}
 {p 12 12 2}
-{cmd:r(N_T)} sample size used by {command:ate_pct} to compute subgroup weights/shares.
+{cmd:r(N_T)} sample size used by {cmd:ate_pct} to compute subgroup weights/shares.
 ({it:N_T = sum_g N_g}){p_end}
 {p 12 12 2}
 {cmd:r(p_T)} target-sample share, 
@@ -102,7 +104,7 @@ Matrices:{p_end}
 {p 12 12 2}
 {cmd:r(b)} 1x3 vector with columns {cmd:taubar rho_a rho_b}{p_end}
 {p 12 12 2}
-{cmd:r(V)} 3×3 variance matrix corresponding to {cmd:r(b)}. Off-diagonal covariances are ignored and set to 0. {p_end}
+{cmd:r(V)} 3x3 variance matrix corresponding to {cmd:r(b)}. Off-diagonal covariances are ignored and set to 0. {p_end}
 {p 12 12 2}
 {cmd:r(tau)} Gx1 vector of subgroup average log-point effects {it:tau_g}{p_end}
 {p 12 12 2}
@@ -118,7 +120,7 @@ Matrices:{p_end}
 
 {marker examples}{title:Examples}
 
-{pstd} Suppose variables {it:gr1}, {it:gr2}, {it:gr3} are indicators for three sub-treatment groups and we are interested in the ATE in percentage points of these three treatment groups. 
+{pstd} Suppose variables {it:gr1}, {it:gr2}, {it:gr3} are indicators for three sub-treatment groups and we are interested in the ATE in percentage points of these three sub-treatment groups. 
 
 {pstd}
 1. After a semi-log regression with subgroup-specific treatment effects:
@@ -146,7 +148,7 @@ Matrices:{p_end}
 
 
 {pstd}
-4. Provide subgroup sizes externally. The command below is exactly the same as {command:ate_pct gr1 gr2 gr3} as 15, 24, 37 are the sample size for the three treatment groups.
+4. Provide subgroup sizes externally. The command below is exactly the same as {cmd:ate_pct gr1 gr2 gr3} as 15, 24, 37 are the sample sizes for the three treatment groups.
 
 {phang2}
 {cmd:. ate_pct gr1 gr2 gr3, groupsize(15 24 37)}
