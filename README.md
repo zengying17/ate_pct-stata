@@ -14,13 +14,16 @@ The command is a post-estimation tool: run a regression model first, then call `
 - `example.do` — example do file illustrating the command using ate_pct_example.dta
 
 ## Installation
-
+### Option A: Installation from SSC
 In Stata, run:
+```
+ssc install ate_pct
+```
 
+### Option B: Installation from Github
+In Stata, run:
 ```stata
 net install ate_pct, from("https://raw.githubusercontent.com/zengying17/ate_pct-stata/main/") replace
-which ate_pct
-help ate_pct
 ```
 
 ## Quick start
